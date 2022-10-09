@@ -2823,6 +2823,7 @@ label:not([class*=col-form]) {
 
 .template-cpanel .cpanel-sidebar {
     position: absolute;
+    left: -110%;
     height: 100vh;
 }
 
@@ -2842,4 +2843,256 @@ label:not([class*=col-form]) {
 
 .template-cpanel .cpanel-main {
     padding-left: 0;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation ul li a.active {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.template-cpanel .section-heading {
+    margin-bottom: 20px;
+}
+
+.template-cpanel .section-heading .title {
+    font-size: 1.75em;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.template-cpanel .form-hospital .form-hospital_header .form-hospital_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.template-cpanel .form-hospital .form-hospital_header .form-hospital_buttons .btn {
+    font-size: .95em;
+}
+
+.template-cpanel .form-hospital .form-hospital_header .form-hospital_buttons .btn + .btn {
+    margin-left: 5px;
+}
+
+.template-cpanel .form-hospital .form-hospital_body {
+    padding: 30px 0;
+}
+
+.template-cpanel .hospital-form .btn-sm--width {
+    min-width: 1px !important;
+    height: 30px;
+}
+
+.template-cpanel .hospital-form .form-check_primary label {
+    color: var(--primary);
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.template-cpanel .hospital-form .form-check_danger label {
+    color: var(--danger);
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.template-cpanel .hospital-form .form-check-inline .form-check-input,
+.template-cpanel .hospital-form .form-check-inline .form-check-input {
+    cursor: pointer;
+}
+
+.template-cpanel .hospital-form .form-check_danger .form-check-input:checked {
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+.template-cpanel .hospital-form .form-check_danger .form-check-input:focus {
+    border-color: var(--danger) !important;
+    box-shadow: none;
+}
+
+.template-cpanel .hospital-tab .nav-tabs {
+    border-bottom: 0;
+}
+
+.template-cpanel .hospital-tab .nav-tabs .nav-item {
+    margin-right: 3px;
+}
+
+.template-cpanel .hospital-tab .nav-tabs .nav-item > .nav-link {
+    font-size: .95em;
+    line-height: 1.6;
+    font-weight: 500;
+    color: var(--gray-900);
+    padding: 6px 15px;
+    border-radius: 0;
+    margin-bottom: 0;
+    border: 1px solid var(--gray-100);
+    background: var(--gray-300);
+    text-transform: uppercase;
+    position: relative;
+    transition: unset;
+}
+
+.template-cpanel .hospital-tab .nav-tabs .nav-item > .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -1px;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    transition: unset;
+}
+
+.template-cpanel .hospital-tab .nav-tabs .nav-item > .nav-link.active {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.template-cpanel .hospital-tab .nav-tabs .nav-item > .nav-link.active:before {
+    border-left-color: var(--primary-color);
+}
+
+@media screen and (max-width: 991px) {
+    .template-cpanel .hospital-tab .nav-tabs .nav-item {
+        margin-right: 0;
+    }
+
+    .template-cpanel .hospital-tab .nav-tabs .nav-item > .nav-link {
+        font-size: .9em;
+        padding: 4px 10px;
+        margin-top: 3px;
+        margin-right: 3px;
+    }
+
+    .template-cpanel .hospital-tab .nav-tabs .nav-item > .nav-link:before {
+        display: none;
+    }
+}
+
+.template-cpanel .hospital-table {
+    background-color: var(--white);
+    font-size: 13px;
+}
+
+.template-cpanel .hospital-table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgba(33, 37, 41, 0.025);
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--gray-200);
+    border-radius: 20px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: var(--gray-300);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .template-cpanel .hospital-table th {
+        white-space: nowrap;
+    }
+}
+
+.template-cpanel .hospital-scroll_vertical {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.template-cpanel .hospital-scroll_vertical::-webkit-scrollbar {
+    width: 5px;
+}
+
+.template-cpanel .hospital-scroll_vertical::-webkit-scrollbar-track {
+    background-color: var(--gray-200);
+}
+
+.template-cpanel .hospital-scroll_vertical::-webkit-scrollbar-thumb {
+    background-color: var(--gray-400);
+    border-radius: 20px;
+}
+
+.template-cpanel .modal-hospital .modal-header {
+    padding: 15px 15px;
+    position: relative;
+}
+
+.template-cpanel .modal-hospital .modal-header .modal-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-right: 50px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.template-cpanel .modal-hospital .modal-header .modal-title i {
+    font-size: 1.1em;
+}
+
+.template-cpanel .modal-hospital .modal-header .close {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    opacity: .6;
+    color: var(--gray-700);
+    border: 0;
+    border-radius: 50%;
+    right: 10px;
+}
+
+.template-cpanel .modal-hospital .modal-header .close:hover {
+    opacity: 1;
+}
+
+.template-cpanel .hospital-information .information-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.template-cpanel .hospital-information .information-item .information-label {
+    width: 120px;
+    flex-shrink: 0;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--gray-700);
+}
+
+.template-cpanel .hospital-information .information-item .information-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--gray-900);
+}
+
+.template-cpanel .hospital-information .information-item .information-content .information-title {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.template-cpanel .hospital-information .information-item .information-content.check-success {
+    color: var(--success);
+}
+
+.template-cpanel .hospital-information .information-item .information-content.check-danger {
+    color: var(--danger);
+}
+
+@media screen and (max-width: 767px) {
+    .hospital-information .hospital-form .col-form-label {
+        white-space: normal;
+    }
 }
