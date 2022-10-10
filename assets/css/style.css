@@ -3107,3 +3107,92 @@ label:not([class*=col-form]) {
 .template-cpanel .hospital-list_check.hospital-list_checked + .stretched-link:after {
 	display: none;
 }
+
+.hospital-tree {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.hospital-tree ul {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.hospital-tree ul li {
+	position: relative;
+}
+
+.hospital-tree a {
+	margin-bottom: 8px;
+	color: var(--gray-800);
+	padding-left: 20px
+}
+
+.hospital-tree > ul > li > a {
+	font-weight: 700;
+}
+
+.hospital-tree ul li > i {
+	position: absolute;
+	top: 4px;
+	opacity: .6;
+	width: 14px;
+	height: 14px;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	cursor: pointer;
+	left: -1px;
+}
+
+.hospital-tree ul li li > i {
+	left: 1px;
+}
+
+.hospital-tree ul li + li {
+	margin-top: 8px;
+}
+
+.hospital-tree ul ul {
+	margin-top: 8px;
+	margin-left: 20px;
+}
+
+.hospital-tree ul ul li:after, .hospital-tree ul ul li:before {
+	content: '';
+	left: -14px;
+	position: absolute;
+	right: auto;
+}
+
+.hospital-tree ul ul li:before {
+	border-left: 1px solid #999;
+	height: calc(100% + 1.6rem);
+	top: -6.5px;
+	width: 1px;
+}
+
+.hospital-tree ul ul li:last-of-type:before {
+	height: 16.2px;
+}
+
+.hospital-tree ul ul li:after {
+	border-top: 1px solid #999;
+	height: 20px;
+	top: 10px;
+	width: 14px;
+}
