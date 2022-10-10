@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Cpanel</title>
+	<meta name="description" content="Template Cpanel">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Cpanel">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
+
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+	<link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
+	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<style>
+		:root {
+			--template-color: #3c444d;
+			--template-hover: #2c3138;
+
+			--primary-color: #20a53a;
+			--primary-hover: #10952a;
+			--primary-rgb: 32, 165, 58;
+		}
+	</style>
+</head>
+
+<body>
+<div class="template-cpanel" id="template-cpanel">
+	<div class="cpanel-overlay" id="cpanel-overlay"></div>
+	<div class="cpanel-sidebar">
+		<div class="sidebar-header">
+			<a href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="sidebar-body">
+			<ul class="sidebar-body_menu" id="sidebar-menu">
+				<li class="active">
+					<a href="./danh-sach.html">
+						<span class="icon"><i class="far fa-clipboard-list"></i></span>
+						<span class="text">Danh sách</span>
+					</a>
+				</li>
+				<li>
+					<a href="./don-tiep.html">
+						<span class="icon"><i class="fal fa-plus-square"></i></span>
+						<span class="text">Đón tiếp</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cpanel-main">
+		<div class="cpanel-header">
+			<div class="cpanel-header_hamburger" id="call-sidebar">
+				<span></span>
+			</div>
+			<a class="cpanel-header_logo" href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+			<div class="cpanel-header_navigation">
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="./danh-sach.html" class="active"><span>Danh sách bệnh nhân</span></a>
+					</li>
+					<li>
+						<a href="./don-tiep.html"><span>Đón tiếp</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="cpanel-header_user d-flex align-items-center">
+				<a href="" class="header-user_button">
+					<span>
+						<i class="fas fa-user"></i>
+					</span>
+					Admin
+				</a>
+				<a href="" class="btn-link align-items-center d-flex ml-4">
+					<i class="fal fa-sign-out"></i>
+					<span class="d-none d-lg-block ml-2">
+						Đăng xuất
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="cpanel-body">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="cpanel-wrap w-100">
+						<div class="hospital-wrap w-100">
+							<div class="form-hospital">
+								<div class="form-hospital_header">
+									<div class="row row5 w-100 align-items-center">
+										<div class="col-lg-8">
+											<div class="form-hospital_buttons">
+												<button type="button" class="btn btn-secondary">
+													<i class="far fa-sync-alt"></i>
+													Báo cáo
+												</button>
+												<button type="button" class="btn btn-primary">
+													<i class="far fa-plus"></i>
+													Đón tiếp
+												</button>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-hospital_form">
+												<div class="form-m1">
+													<form action="">
+														<div class="row row5 mt-0">
+															<div class="col-md-5 col-sm-6">
+																<div class="position-relative row row5">
+																	<label for=""
+																		   class="col-form-label align-self-center col-4">
+																		Từ ngày
+																	</label>
+																	<div class="col-8 position-relative z-index-2">
+																		<input class="form-control" value="2022-09-10"
+																			   name=""
+																			   type="date">
+																		<div class="icon-ios"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-5 col-sm-6">
+																<div class="position-relative row row5">
+																	<label for=""
+																		   class="col-form-label align-self-center col-4">
+																		Đến ngày
+																	</label>
+																	<div class="col-8 position-relative z-index-2">
+																		<input class="form-control" value="2022-09-10"
+																			   name=""
+																			   type="date">
+																		<div class="icon-ios"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-2">
+																<button type="submit" class="btn btn-success">
+																	<i class="far fa-search"></i>
+																	Tìm kiếm
+																</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-hospital_body">
+									<div class="hospital-inner">
+										<div class="hospital-left">
+											<div class="border p-2 bg-light h-100">
+												<div class="form-m1">
+													<div class="position-relative">
+														<select name="" class="form-control initSelect2" id="">
+															<option value="">Tất cả phòng đón tiếp</option>
+															<option value="">Tất cả phòng đón tiếp 1</option>
+															<option value="">Tất cả phòng đón tiếp 2</option>
+															<option value="">Tất cả phòng đón tiếp 3</option>
+															<option value="">Tất cả phòng đón tiếp 4</option>
+														</select>
+													</div>
+												</div>
+												<div class="hospital-tree">
+													<ul class="list-unstyled mb-0">
+														<li>
+															<a href="">Tất cả bệnh nhân (61)</a>
+														</li>
+														<li>
+															<a href="">Độ tuổi</a>
+															<i class="fas fa-plus-circle expanded-tree"></i>
+															<ul>
+																<li>
+																	<a href="">Trẻ em dưới 6 tuổi (1)</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a href="">Giới tính</a>
+															<i class="fas fa-plus-circle expanded-tree"></i>
+															<ul>
+																<li>
+																	<a href="">Nam (58)</a>
+																</li>
+																<li>
+																	<a href="">Nữ (2)</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a href="">Đối tượng</a>
+															<i class="fas fa-plus-circle expanded-tree"></i>
+															<ul>
+																<li>
+																	<a href="">BHYT (20)</a>
+																</li>
+																<li>
+																	<a href="">Nữ (2)</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="hospital-right">
+											<div class="hospital-table_header bg-success text-white font-weight-bolder py-2 px-3">
+												<div class="d-flex align-items-center justify-content-end">
+													01/07/21 >> 10/07/21
+													<span class="px-3">-</span>
+													Bệnh nhân (20)
+													<span class="px-3">-</span>
+													VP(41)
+												</div>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-bordered table-striped table-hover hospital-table mb-0">
+													<thead>
+													<tr>
+														<th class="text-center"></th>
+														<th>Ngày Đón Tiếp</th>
+														<th>Mã BN</th>
+														<th>Tên Bệnh Nhân</th>
+														<th>Số BHYT</th>
+														<th class="text-center">Giới Tính</th>
+														<th class="text-center">Tuổi</th>
+														<th>Phòng Khám</th>
+														<th>Dịch Vụ Khám</th>
+														<th>Bác Sĩ Khám Bệnh</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr class="position-relative">
+														<td class="text-center">
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td></td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check hospital-list_checked">
+																<i class="fas fa-check"></i>
+															</span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nam</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													<tr class="position-relative">
+														<td class="text-center">
+															<span class="hospital-list_check"></span>
+															<a href="./don-tiep.html" class="stretched-link"></a>
+														</td>
+														<td>07:01 10/07/2021</td>
+														<td>21000103</td>
+														<td>NGUYỄN VĂN A</td>
+														<td>QN5978923492384</td>
+														<td class="text-center">Nữ</td>
+														<td class="text-center">99</td>
+														<td>PK B9</td>
+														<td>Khám Da Liễu</td>
+														<td>Quản Trị Hệ Thống</td>
+													</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cpanel-footer">
+		<div class="cpanel-wrap">
+			<div class="text-center">
+				Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+				<a href="./">Tài liệu</a>
+				<span class="px-2">-</span>
+				<a href="tel:0333851915">Liên hệ</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+<script type="text/javascript" src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
