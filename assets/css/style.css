@@ -1485,7 +1485,7 @@ label:not([class*=col-form]) {
 }
 
 .template-cpanel .cpanel-header .cpanel-header_navigation ul li a:hover {
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 }
 
 .template-cpanel .cpanel-header .cpanel-header_navigation ul li + li a:before {
@@ -1505,7 +1505,6 @@ label:not([class*=col-form]) {
 
 .template-cpanel .cpanel-header .cpanel-header_user {
 	position: relative;
-	margin-left: auto;
 }
 
 .template-cpanel .cpanel-header .cpanel-header_user .header-user_button {
@@ -3284,4 +3283,89 @@ label:not([class*=col-form]) {
 	.template-cpanel .hospital-inner .hospital-left.is-show .danhsach-overlay {
 		display: block;
 	}
+}
+
+.template-cpanel .cpanel-header .cpanel-header_theme {
+	margin-left: auto;
+	margin-right: 15px;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_theme svg {
+	width: 20px;
+	height: 20px;
+	transition: var(--transition-default);
+	fill: var(--gray-800);
+}
+
+.template-cpanel .cpanel-header .cpanel-header_theme #dark {
+	display: none;
+}
+
+html[data-theme=dark] body {
+	color: #fff;
+}
+
+html[data-theme=dark] body,
+html[data-theme=dark] .template-cpanel .cpanel-wrap,
+html[data-theme=dark] .modal-hospital .modal-content {
+	background-color: var(--gray-700);
+}
+
+html[data-theme=dark] .template-cpanel .cpanel-header {
+	background-color: var(--gray-800);
+	border-bottom: 1px solid var(--gray-600);
+}
+
+html[data-theme=dark] .hospital-form_wrap {
+	background-color: var(--gray-700) !important;
+	border-color: var(--gray-600) !important;
+}
+
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_navigation ul li a,
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .header-user_button,
+html[data-theme=dark] .hospital-form_wrap .form-heading,
+html[data-theme=dark] .template-cpanel .hospital-information .information-item .information-label,
+html[data-theme=dark] .template-cpanel .hospital-information .information-item .information-content,
+html[data-theme=dark] .template-cpanel .cpanel-footer .cpanel-wrap,
+html[data-theme=dark] .hospital-tree ul li a {
+	color: var(--white) !important;
+}
+
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_theme svg {
+	fill: var(--white);
+}
+
+html[data-theme=dark] .template-cpanel .hospital-table {
+	background-color: var(--gray-800);
+	color: var(--white);
+}
+
+html[data-theme=dark] .template-cpanel thead th,
+html[data-theme=dark] .template-cpanel tbody td,
+html[data-theme=dark] .modal-header {
+	border-color: var(--gray-600) !important;
+}
+
+html[data-theme=dark] .table-hover tbody tr:hover {
+	color: var(--white);
+	background-color: var(--gray-700);
+}
+
+html[data-theme=dark] .modal-body .form-control {
+	background-color: var(--white);
+}
+
+html[data-theme=dark] .template-cpanel .hospital-inner .hospital-left .hospital-left_wrap,
+html[data-theme=dark] .form-m1 .select2-container .select2-dropdown {
+	background-color: var(--gray-800) !important;
+	border-color: var(--gray-600) !important;
+}
+
+html[data-theme=dark] .hospital-tree ul li > span {
+	color: var(--gray-800) !important;
+}
+
+html[data-theme=dark] .select2-container--default .select2-results__option[aria-selected=true] {
+	color: var(--white);
+	background-color: var(--gray-700);
 }
