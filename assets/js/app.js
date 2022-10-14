@@ -114,50 +114,166 @@
 	let initFromModule1 = function () {
 		let elmWrapper = $('#createRow');
 		$('#createRow').on('click', '.addRow', function () {
-			let theCaoSelect = $(this).closest('.row-item').find('#theCao'),
-				theCaoIndexSelected = theCaoSelect.find('option:selected').attr('data-index'),
-				theCaoRender = $(this).closest('.row-item').find('#theCao').clone();
-
-			theCaoRender.find('option').attr('selected', false);
-			theCaoRender.find('option[data-index=' + theCaoIndexSelected + ']').attr('selected', true);
-
-			let menhGiaSelect = $(this).closest('.row-item').find('#menhGia'),
-				menhGiaIndexSelected = menhGiaSelect.find('option:selected').attr('data-index'),
-				menhGiaRender = $(this).closest('.row-item').find('#menhGia').clone();
-
-			menhGiaRender.find('option').attr('selected', false);
-			menhGiaRender.find('option[data-index=' + menhGiaIndexSelected + ']').attr('selected', true);
-
-			let rowRender = `<div class="row-item row row5 rowmb3">
-                            <div class="col-lg-3 col-sm-12 col-12">
-							    ${theCaoRender[0].innerHTML}
-							 </div>
-							<div class="col-lg-3 col-sm-6 col-12">
-							    <div class="position-relative form-icon form-icon_right">
-								    <input type="text" class="form-control" placeholder="Mã thẻ">
-                                    <button type="button" class="copy-value form-button">
-                                        <i class="fas fa-paste"></i>
-                                    </button>
+			let rowRender = `<div class="row row3 mt-0 row-item">
+								<div class="col-lg-3 col-sm-6">
+									<div class="position-relative row row3">
+										<label for=""
+											   class="col-form-label align-self-center col-4">
+											ĐK khám
+										</label>
+										<div class="col-8">
+											<div class="position-relative">
+												<select name="" id=""
+														class="form-control initSelect2">
+													<option value="">Khám Mắt
+													</option>
+													<option value="">Khám Ngoại
+														khoa
+													</option>
+													<option value="">Khám Nội
+														khoa
+													</option>
+													<option value="">Khám Nội
+														tiết
+													</option>
+													<option value="">Khám Phụ
+														sản
+													</option>
+													<option value="">Khám Răng
+														hàm
+														mặt
+													</option>
+													<option value="">Khám Tai
+														mũi
+														họng
+													</option>
+													<option value="">Khám Tâm
+														thần
+													</option>
+													<option value="">Khám Ung
+														bướu
+													</option>
+													<option value="">Khám YHCT
+													</option>
+													<option value="">Khám Lao
+													</option>
+													<option value="">Khám Nội Hô
+														Hấp
+													</option>
+													<option value="">Khám Ngoại
+														thận
+														-
+														tiết
+														niệu
+													</option>
+													<option value="">Khám Chấn
+														thương
+														chỉnh
+														hình
+													</option>
+												</select>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="col-lg-3 col-sm-6 col-12">
-							    <div class="position-relative form-icon form-icon_right">
-								    <input type="text" class="form-control" placeholder="Mã seri">
-                                    <button type="button" class="copy-value form-button">
-                                        <i class="fas fa-paste"></i>
-                                    </button>
+								<div class="col-lg-3 col-sm-6 align-self-center">
+									<div class="position-relative row row3">
+										<label for=""
+											   class="col-form-label align-self-center col-12">
+											Lúc:&nbsp;<span class="ml-2">07:01
+											10/07/2021</span>
+										</label>
+									</div>
 								</div>
-							</div>
-							<div class="col-lg-2 col-sm-10 col-9">
-							    ${menhGiaRender[0].innerHTML}
-							</div>
-							<div class="col-lg-1 col-sm-2 col-3 text-right">
-								<button type="button" class="btn btn-small btn-danger deleteRow">
-									<i class="fas fa-trash-alt"></i>
-								</button>
-							</div>
-						</div>`;
+								<div class="col-lg-6 col-sm-6">
+									<div class="position-relative row row3">
+										<label for=""
+											   class="col-form-label align-self-center col-4 col-lg-2">
+											Lý do khám
+										</label>
+										<div class="col-8 col-lg-10">
+											<input type="text"
+												   class="form-control"
+												   placeholder="Nhập lý do khám">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-6">
+									<div class="position-relative row row3">
+										<label for=""
+											   class="col-form-label align-self-center col-4 col-lg-2">
+											Dịch vụ
+										</label>
+										<div class="col-8 col-lg-10">
+											<select name="" id=""
+													class="form-control">
+												<option value="">Dịch vụ 1
+												</option>
+												<option value="">Dịch vụ 2
+												</option>
+												<option value="">Dịch vụ 3
+												</option>
+												<option value="">Dịch vụ 4
+												</option>
+												<option value="">Dịch vụ 5
+												</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="position-relative row row3">
+										<label for=""
+											   class="col-form-label align-self-center col-4 col-sm-2 col-lg-2">
+											Phòng khám
+										</label>
+										<div class="col-6 col-sm-8 col-lg-9">
+											<div class="position-relative">
+												<select name="" id=""
+														class="form-control initSelect2">
+													<option value="">PK 1
+													</option>
+													<option value="">PK 2
+													</option>
+													<option value="">PK 3
+													</option>
+													<option value="">PK 4
+													</option>
+													<option value="">PK 5
+													</option>
+													<option value="">PK 6
+													</option>
+													<option value="">PK 7
+													</option>
+													<option value="">PK 8
+													</option>
+													<option value="">PK 9
+													</option>
+													<option value="">PK 10
+													</option>
+													<option value="">PK 11
+													</option>
+													<option value="">PK 12
+													</option>
+													<option value="">PK 13
+													</option>
+													<option value="">PK 14
+													</option>
+													<option value="">PK 15
+													</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-2 col-lg-1">
+											<button type="button" class="btn btn-small btn-danger deleteRow w-100">
+												<i class="fas fa-trash-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>`;
 			elmWrapper.append(rowRender);
+			initSelect2();
 		}).on('click', '.deleteRow', function () {
 			$(this).closest('.row-item').remove();
 		});

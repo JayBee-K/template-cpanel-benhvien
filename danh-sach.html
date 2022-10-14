@@ -51,13 +51,13 @@
 		</div>
 		<div class="sidebar-body">
 			<ul class="sidebar-body_menu" id="sidebar-menu">
-				<li class="active">
+				<li>
 					<a href="./danh-sach.html">
 						<span class="icon"><i class="far fa-clipboard-list"></i></span>
 						<span class="text">Danh sách</span>
 					</a>
 				</li>
-				<li>
+				<li class="active">
 					<a href="./don-tiep.html">
 						<span class="icon"><i class="fal fa-plus-square"></i></span>
 						<span class="text">Đón tiếp</span>
@@ -76,6 +76,27 @@
 			</a>
 			<div class="cpanel-header_navigation">
 				<ul class="list-unstyled mb-0">
+					<li class="position-relative navigation-collapse_wrap">
+						<div class="navigation-hamburger">
+							<span></span>
+						</div>
+						<div class="navigation-collapse">
+							<ul class="collapse-menu_list">
+								<li>
+									<a href="./danh-sach.html">
+										<span class="icon"><i class="far fa-clipboard-list"></i></span>
+										<span class="text">Danh sách</span>
+									</a>
+								</li>
+								<li class="active">
+									<a href="./don-tiep.html">
+										<span class="icon"><i class="fal fa-plus-square"></i></span>
+										<span class="text">Đón tiếp</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 					<li>
 						<a href="./danh-sach.html" class="active"><span>Danh sách bệnh nhân</span></a>
 					</li>
@@ -83,6 +104,18 @@
 						<a href="./don-tiep.html"><span>Đón tiếp</span></a>
 					</li>
 				</ul>
+			</div>
+			<div class="cpanel-header_theme">
+				<a href="javascript:void(0)" id="changeTheme">
+					<svg id="light" xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40"
+						 data-icon="sun" viewBox="0 0 8 8" style="display: none;">
+						<path d="M4 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-2.5 1c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm5 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-2.5 1c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-3.5 1.5c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm7 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-6 2.5c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm5 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-2.5 1c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5z"></path>
+					</svg>
+					<svg id="dark" xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40"
+						 data-icon="moon" viewBox="0 0 8 8" style="display: inline;">
+						<path d="M2.719 0c-1.58.53-2.719 2.021-2.719 3.781 0 2.21 1.79 4 4 4 1.76 0 3.251-1.17 3.781-2.75-.4.14-.831.25-1.281.25-2.21 0-4-1.79-4-4 0-.44.079-.881.219-1.281z"></path>
+					</svg>
+				</a>
 			</div>
 			<div class="cpanel-header_user d-flex align-items-center">
 				<a href="" class="header-user_button">
@@ -131,10 +164,10 @@
 															<div class="col-md-5 col-sm-6">
 																<div class="position-relative row row5">
 																	<label for=""
-																		   class="col-form-label align-self-center col-4">
+																		   class="col-form-label align-self-center col-4 col-xl-3">
 																		Từ ngày
 																	</label>
-																	<div class="col-8 position-relative z-index-2">
+																	<div class="col-8 col-xl-9 position-relative z-index-2">
 																		<input class="form-control" value="2022-09-10"
 																			   name=""
 																			   type="date">
@@ -145,10 +178,10 @@
 															<div class="col-md-5 col-sm-6">
 																<div class="position-relative row row5">
 																	<label for=""
-																		   class="col-form-label align-self-center col-4">
+																		   class="col-form-label align-self-center col-4 col-xl-3">
 																		Đến ngày
 																	</label>
-																	<div class="col-8 position-relative z-index-2">
+																	<div class="col-8 col-xl-9 position-relative z-index-2">
 																		<input class="form-control" value="2022-09-10"
 																			   name=""
 																			   type="date">

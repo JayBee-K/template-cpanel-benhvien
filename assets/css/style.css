@@ -1359,7 +1359,7 @@ label:not([class*=col-form]) {
 }
 
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li:hover > a,
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a[aria-expanded=true] {
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a {
 	/*background-color: var(--primary-color);*/
 	color: var(--primary-color);
 	/*box-shadow: inset 4px 0 0 0 var(--white);*/
@@ -1379,7 +1379,7 @@ label:not([class*=col-form]) {
 
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li.active > a .icon,
 .template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li:hover > a .icon,
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a[aria-expanded=true] .icon {
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a .icon {
 	opacity: 1;
 }
 
@@ -1401,7 +1401,7 @@ label:not([class*=col-form]) {
 	line-height: 0;
 }
 
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a[aria-expanded=true] > .arrow {
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a > .arrow {
 	transform: rotate(180deg);
 }
 
@@ -3297,6 +3297,175 @@ label:not([class*=col-form]) {
 	fill: var(--gray-800);
 }
 
+@media screen and (max-width: 919px) {
+	.template-cpanel .cpanel-header .cpanel-header_theme svg {
+		fill: var(--white);
+	}
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: var(--transition-default);
+	cursor: pointer;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger:before,
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger:after,
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger > span {
+	display: block;
+	width: 20px;
+	height: 1px;
+	margin: 2.5px auto;
+	background-color: var(--gray-900);
+	-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	opacity: 1;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap .navigation-hamburger:before,
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap .navigation-hamburger:after {
+	content: "";
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap:hover .navigation-hamburger > span {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	opacity: 0;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap:hover .navigation-hamburger:before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-top: 1px;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap:hover .navigation-hamburger:after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	margin-top: -9px;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap:hover .navigation-collapse {
+	top: calc(100% + 10px);
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse {
+	position: absolute;
+	top: calc(100% + 40px);
+	left: 0;
+	z-index: 10;
+	opacity: 0;
+	visibility: visible;
+	pointer-events: none;
+	transition: var(--transition-default);
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse:before {
+	position: absolute;
+	top: -20px;
+	height: 20px;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+	display: block;
+	content: "";
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--template-color);
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+	min-width: 180px;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li {
+	width: 100%;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li + li a:before {
+	display: none;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a {
+	font-size: var(--size-theme);
+	color: var(--gray-100);
+	line-height: 38px;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	justify-content: flex-start;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a > .icon {
+	width: 24px;
+	opacity: .7;
+	font-size: var(--size-theme);
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li:hover > a {
+	color: var(--primary-color);
+	background-color: rgba(255, 255, 255, .05);
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li.active > a {
+	background-color: var(--primary-color);
+	color: #fff !important;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li.active:hover > a {
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li.active > a .icon,
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li:hover > a .icon,
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a .icon {
+	opacity: 1;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a[data-toggle=collapse] {
+	padding-right: 40px;
+	position: relative;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a > .arrow {
+	font-size: 16px;
+	margin-left: auto;
+	transition: var(--transition-default);
+	position: absolute;
+	top: 1px;
+	right: 15px;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a > .arrow > i {
+	line-height: 0;
+}
+
+.template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li > a > .arrow {
+	transform: rotate(180deg);
+}
+
 .template-cpanel .cpanel-header .cpanel-header_theme #dark {
 	display: none;
 }
@@ -3368,4 +3537,10 @@ html[data-theme=dark] .hospital-tree ul li > span {
 html[data-theme=dark] .select2-container--default .select2-results__option[aria-selected=true] {
 	color: var(--white);
 	background-color: var(--gray-700);
+}
+
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger:before,
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger:after,
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_navigation .navigation-hamburger > span {
+	background-color: var(--white);
 }
