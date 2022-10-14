@@ -1358,8 +1358,7 @@ label:not([class*=col-form]) {
 	font-size: var(--size-theme);
 }
 
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li:hover > a,
-.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li > a {
+.template-cpanel .cpanel-sidebar .sidebar-body .sidebar-body_menu > li:hover > a{
 	/*background-color: var(--primary-color);*/
 	color: var(--primary-color);
 	/*box-shadow: inset 4px 0 0 0 var(--white);*/
