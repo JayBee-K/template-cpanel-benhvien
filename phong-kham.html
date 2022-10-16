@@ -164,18 +164,523 @@
 																<div class="row row3 mt-0">
 																	<div class="col-lg-3 col-sm-6">
 																		<div class="position-relative row row3">
-																			<label for="" class="col-form-label align-self-center col-4">
+																			<label for=""
+																				   class="col-form-label align-self-center col-4">
 																				Đối tượng
 																			</label>
 																			<div class="col-8">
 																				<div class="form-check-inline mt-1 align-middle form-check_primary mb-0">
-																					<input type="checkbox" class="form-check-input" id="doi-tuong">
-																					<label class="form-check-label mb-0" for="doi-tuong">
+																					<input type="checkbox"
+																						   class="form-check-input"
+																						   id="doi-tuong">
+																					<label class="form-check-label mb-0"
+																						   for="doi-tuong">
 																						Ưu tiên
 																					</label>
 																				</div>
 																			</div>
 																		</div>
+																	</div>
+																</div>
+																<div class="row row3 mt-0">
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Mã BN
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập mã bệnh nhân">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 text-danger align-self-center">
+																				Họ và tên
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập họ và tên">
+																		</div>
+																	</div>
+																	<div class="col-lg-3 col-sm-6">
+																		<label for=""
+																			   class="col-form-label py-0 text-danger align-self-center">
+																			Năm sinh
+																		</label>
+																		<div class="position-relative row row3">
+																			<div class="col-3">
+																				<input type="text" class="form-control">
+																			</div>
+																			<div class="col-3">
+																				<input type="text" class="form-control">
+																			</div>
+																			<div class="col-6">
+																				<input type="text" class="form-control">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-lg-1 col-sm-6">
+																		<label for=""
+																			   class="col-form-label py-0 text-danger align-self-center">
+																			Giới tính
+																		</label>
+																		<select name="" class="form-control" id="">
+																			<option value="">Nam</option>
+																			<option value="">Nữ</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Điện thoại
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập điện thoại">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				CCCD
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập CCCD">
+																		</div>
+																	</div>
+																</div>
+																<div class="row row3 mt-0">
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center text-danger">
+																				Địa chỉ gõ tắt
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập địa chỉ gõ tắt">
+																		</div>
+																	</div>
+																	<div class="col-lg-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Địa chỉ chi tiết
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập địa chỉ chi tiết">
+																		</div>
+																	</div>
+																	<div class="col-lg-4 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Số nhà, thôn phố
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập số nhà, thôn phố">
+																		</div>
+																	</div>
+																</div>
+																<div class="row row3 mt-0">
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Nghề nghiệp
+																			</label>
+																			<select name="" class="form-control" id="">
+																				<option value="">13 - Nhân dân
+																				</option>
+																				<option value="">12 - Bộ đội
+																				</option>
+																				<option value="">11 - Công an
+																				</option>
+																				<option value="">...</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="col-lg-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Nơi làm việc
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập địa chỉ chi tiết">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Quốc tịch
+																			</label>
+																			<select name="" id=""
+																					class="form-control initSelect2">
+																				<option value="">Việt Nam
+																				</option>
+																				<option value="">Laos</option>
+																				<option value="">Campuchia
+																				</option>
+																				<option value="">Thái Lan
+																				</option>
+																				<option value="">Trung Quốc
+																				</option>
+																				<option value="">Hong Kong
+																				</option>
+																				<option value="">Đài Loan
+																				</option>
+																				<option value="">Hàn Quốc
+																				</option>
+																				<option value="">Nhật Bản
+																				</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center">
+																				Dân tộc
+																			</label>
+																			<select name=""
+																					class="form-control initSelect2">
+																				<option value="">25-Kinh
+																				</option>
+																				<option value="">26-Tày</option>
+																				<option value="">27-Hoa</option>
+																				<option value="">28-Khmer
+																				</option>
+																				<option value="">29-Nùng
+																				</option>
+																				<option value="">30-Ede</option>
+																				<option value="">31-Thái
+																				</option>
+																				<option value="">32-Mường
+																				</option>
+																				<option value="">33-HMông
+																				</option>
+																				<option value="">34-Gia-rai
+																				</option>
+																				<option value="">35-Kinh
+																				</option>
+																				<option value="">36-Ngái
+																				</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<div class="row row3 mt-0">
+																	<div class="col-lg-2 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center text-danger">
+																				Yêu cầu khám
+																			</label>
+																			<div class="position-relative">
+																				<select name="" id=""
+																						class="form-control initSelect2">
+																					<option value="">Khám Mắt
+																					</option>
+																					<option value="">Khám Ngoại
+																						khoa
+																					</option>
+																					<option value="">Khám Nội
+																						khoa
+																					</option>
+																					<option value="">Khám Nội
+																						tiết
+																					</option>
+																					<option value="">Khám Phụ
+																						sản
+																					</option>
+																					<option value="">Khám Răng
+																						hàm
+																						mặt
+																					</option>
+																					<option value="">Khám Tai
+																						mũi
+																						họng
+																					</option>
+																					<option value="">Khám Tâm
+																						thần
+																					</option>
+																					<option value="">Khám Ung
+																						bướu
+																					</option>
+																					<option value="">Khám YHCT
+																					</option>
+																					<option value="">Khám Lao
+																					</option>
+																					<option value="">Khám Nội Hô
+																						Hấp
+																					</option>
+																					<option value="">Khám Ngoại
+																						thận
+																						-
+																						tiết
+																						niệu
+																					</option>
+																					<option value="">Khám Chấn
+																						thương
+																						chỉnh
+																						hình
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-lg-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center text-danger">
+																				Phòng khám
+																			</label>
+																			<div class="position-relative">
+																				<select name="" id=""
+																						class="form-control initSelect2">
+																					<option value="">PK 1
+																					</option>
+																					<option value="">PK 2
+																					</option>
+																					<option value="">PK 3
+																					</option>
+																					<option value="">PK 4
+																					</option>
+																					<option value="">PK 5
+																					</option>
+																					<option value="">PK 6
+																					</option>
+																					<option value="">PK 7
+																					</option>
+																					<option value="">PK 8
+																					</option>
+																					<option value="">PK 9
+																					</option>
+																					<option value="">PK 10
+																					</option>
+																					<option value="">PK 11
+																					</option>
+																					<option value="">PK 12
+																					</option>
+																					<option value="">PK 13
+																					</option>
+																					<option value="">PK 14
+																					</option>
+																					<option value="">PK 15
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-lg-4 col-sm-6">
+																		<div class="position-relative">
+																			<label for=""
+																				   class="col-form-label py-0 align-self-center text-danger">
+																				Ghi chú
+																			</label>
+																			<input type="text" class="form-control"
+																				   placeholder="Nhập ghi chú">
+																		</div>
+																	</div>
+																</div>
+																<div class="row mt-3">
+																	<div class="col-12">
+																		<div class="form-hospital_buttons text-right">
+																			<button type="button"
+																					class="btn btn-primary">
+																				<i class="far fa-plus"></i>
+																				Thêm
+																			</button>
+																			<button type="button"
+																					class="btn btn-success">
+																				<i class="far fa-save"></i>
+																				Lưu
+																			</button>
+																			<button type="button"
+																					class="btn btn-secondary">
+																				<i class="far fa-print"></i>
+																				Lưu + In
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-4">
+													<div class="border rounded-lg p-3 h-100 bg-light hospital-form_wrap">
+														<div class="row row3 mt-2">
+															<div class="col-12">
+																<div class="position-relative">
+																	<label for=""
+																		   class="col-form-label py-0 align-self-center">
+																		Số thẻ BHYT
+																	</label>
+																	<div class="row row3">
+																		<div class="col-2">
+																			<input type="text" class="form-control">
+																		</div>
+																		<div class="col-2">
+																			<input type="text" class="form-control">
+																		</div>
+																		<div class="col-2">
+																			<input type="text" class="form-control">
+																		</div>
+																		<div class="col-6">
+																			<input type="text" class="form-control">
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-12">
+																<div class="position-relative">
+																	<label for=""
+																		   class="col-form-label py-0 align-self-center">
+																		Mã KCBBD
+																	</label>
+																	<div class="row row3">
+																		<div class="col-lg-3 col-4">
+																			<input type="text" class="form-control">
+																		</div>
+																		<div class="col-lg-9 col-8">
+																			<div class="position-relative">
+																				<select name=""
+																						class="form-control initSelect2">
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																					<option value="">Bệnh
+																						viện
+																						đa
+																						khoa Đức Giang
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="position-relative">
+																	<label for=""
+																		   class="col-form-label py-0 align-self-center">
+																		Hạn thẻ từ
+																	</label>
+																	<div class="row row3">
+																		<div class="col-3">
+																			<input type="text"
+																				   class="form-control">
+																		</div>
+																		<div class="col-3">
+																			<input type="text"
+																				   class="form-control">
+																		</div>
+																		<div class="col-6">
+																			<input type="text"
+																				   class="form-control">
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="position-relative">
+																	<label for=""
+																		   class="col-form-label py-0 align-self-center">
+																		Hạn thẻ đến
+																	</label>
+																	<div class="row row3">
+																		<div class="col-3">
+																			<input type="text"
+																				   class="form-control">
+																		</div>
+																		<div class="col-3">
+																			<input type="text"
+																				   class="form-control">
+																		</div>
+																		<div class="col-6">
+																			<input type="text"
+																				   class="form-control">
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-12">
+																<div class="position-relative">
+																	<label for=""
+																		   class="col-form-label py-0 align-self-center">
+																		Địa chỉ thẻ
+																	</label>
+																	<input type="text" class="form-control"
+																		   placeholder="Nhập địa chỉ thẻ">
+																</div>
+															</div>
+															<div class="col-12">
+																<div class="position-relative">
+																	<label for=""
+																		   class="col-form-label py-0 align-self-center">
+																		Tuyến KCB
+																	</label>
+																	<div class="position-relative">
+																		<select name="" id="" class="form-control">
+																			<option value="">
+																				Đúng tuyến
+																			</option>
+																			<option value="dt-gioithieu">
+																				Đúng tuyến (giới thiệu)
+																			</option>
+																			<option value="">
+																				Đúng tuyển (giấy hẹn)
+																			</option>
+																			<option value="">
+																				Đúng tuyến (cấp cứu)
+																			</option>
+																			<option value="">Thông tuyến
+																				huyện
+																			</option>
+																			<option value="">Trái tuyến
+																			</option>
+																			<option value="">Trái tuyến
+																				(thông
+																				tuyến
+																				tỉnh)
+																			</option>
+																		</select>
 																	</div>
 																</div>
 															</div>
@@ -184,6 +689,508 @@
 												</div>
 											</div>
 										</form>
+										<div class="row row3 mt-1">
+											<div class="col-lg-3">
+												<div class="border rounded-lg p-0 h-100 bg-light hospital-form_wrap hospital-sidebar">
+													<div class="hospital-sidebar_header">
+														<div class="hospital-sidebar_hamburger">
+															<span></span>
+														</div>
+														<div class="hospital-sidebar_title">
+															Danh sách BN
+														</div>
+														<div class="hospital-sidebar_actions">
+															<a href="" class="hospital-sidebar_actions--item">
+																<i class="fas fa-sync"></i>
+															</a>
+															<a href="" class="hospital-sidebar_actions--item">
+																<i class="fas fa-search"></i>
+															</a>
+															<a href="" class="hospital-sidebar_actions--item">
+																<i class="fas fa-check-circle"></i>
+															</a>
+														</div>
+													</div>
+													<div class="hospital-sidebar_body">
+														<div class="hospital-sidebar_list">
+															<div class="hospital-sidebar_list--item">
+																<div class="hospital-list_item-left">
+																	<div class="title">
+																		Nguyễn Văn A, 1992
+																	</div>
+																	<div class="sub">
+																		Đối tượng: BHYT, Mã BN: 22000001
+																	</div>
+																	<div class="text">
+																		Địa chỉ: Đức Giang, Long Biên, Hà Nội
+																	</div>
+																</div>
+																<div class="hospital-list_item-right">
+																	<div class="time">
+																		15 min
+																	</div>
+																	<a href="javascript:void(0)"
+																	   class="toggle-star star">
+																		<i class="far fa-star"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="hospital-sidebar_list--item">
+																<div class="hospital-list_item-left">
+																	<div class="title">
+																		Nguyễn Văn A, 1992
+																	</div>
+																	<div class="sub">
+																		Đối tượng: BHYT, Mã BN: 22000002
+																	</div>
+																	<div class="text">
+																		Địa chỉ: Đức Giang, Long Biên, Hà Nội
+																	</div>
+																</div>
+																<div class="hospital-list_item-right">
+																	<div class="time">
+																		15 min
+																	</div>
+																	<a href="javascript:void(0)"
+																	   class="toggle-star star star-checked">
+																		<i class="far fa-star"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="hospital-sidebar_list--item">
+																<div class="hospital-list_item-left">
+																	<div class="title">
+																		Nguyễn Văn A, 1992
+																	</div>
+																	<div class="sub">
+																		Đối tượng: BHYT, Mã BN: 22000001
+																	</div>
+																	<div class="text">
+																		Địa chỉ: Đức Giang, Long Biên, Hà Nội
+																	</div>
+																</div>
+																<div class="hospital-list_item-right">
+																	<div class="time">
+																		15 min
+																	</div>
+																	<a href="javascript:void(0)"
+																	   class="toggle-star star">
+																		<i class="far fa-star"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="hospital-sidebar_list--item">
+																<div class="hospital-list_item-left">
+																	<div class="title">
+																		Nguyễn Văn A, 1992
+																	</div>
+																	<div class="sub">
+																		Đối tượng: BHYT, Mã BN: 22000002
+																	</div>
+																	<div class="text">
+																		Địa chỉ: Đức Giang, Long Biên, Hà Nội
+																	</div>
+																</div>
+																<div class="hospital-list_item-right">
+																	<div class="time">
+																		15 min
+																	</div>
+																	<a href="javascript:void(0)"
+																	   class="toggle-star star star-checked">
+																		<i class="far fa-star"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="hospital-sidebar_list--item">
+																<div class="hospital-list_item-left">
+																	<div class="title">
+																		Nguyễn Văn A, 1992
+																	</div>
+																	<div class="sub">
+																		Đối tượng: BHYT, Mã BN: 22000001
+																	</div>
+																	<div class="text">
+																		Địa chỉ: Đức Giang, Long Biên, Hà Nội
+																	</div>
+																</div>
+																<div class="hospital-list_item-right">
+																	<div class="time">
+																		15 min
+																	</div>
+																	<a href="javascript:void(0)"
+																	   class="toggle-star star">
+																		<i class="far fa-star"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="hospital-sidebar_list--item">
+																<div class="hospital-list_item-left">
+																	<div class="title">
+																		Nguyễn Văn A, 1992
+																	</div>
+																	<div class="sub">
+																		Đối tượng: BHYT, Mã BN: 22000002
+																	</div>
+																	<div class="text">
+																		Địa chỉ: Đức Giang, Long Biên, Hà Nội
+																	</div>
+																</div>
+																<div class="hospital-list_item-right">
+																	<div class="time">
+																		15 min
+																	</div>
+																	<a href="javascript:void(0)"
+																	   class="toggle-star star star-checked">
+																		<i class="far fa-star"></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-9">
+												<div class="hospital-scroll_vertical">
+													<div class="table-responsive">
+														<table class="table table-bordered table-striped table-hover hospital-table mb-0">
+															<thead>
+															<tr>
+																<th class="text-center">Xét nghiệm</th>
+																<th>Mã DV</th>
+																<th>Tên DV</th>
+																<th class="text-center">SL</th>
+																<th class="text-center">Đơn vị</th>
+																<th class="text-center">Đơn giá</th>
+																<th class="text-center">Thành tiền</th>
+																<th class="text-center">BHYT trả</th>
+																<th class="text-center">BN trả</th>
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<td class="text-center">
+																	<input type="checkbox" class="mt-1"
+																		   value="">
+																</td>
+																<td>
+																	DV001
+																</td>
+																<td>
+																	Định nhóm máu ABO
+																</td>
+																<td class="text-center">
+																	01
+																</td>
+																<td class="text-center">
+																	Lần
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	0
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center">
+																	<input type="checkbox" class="mt-1"
+																		   value="">
+																</td>
+																<td>
+																	DV001
+																</td>
+																<td>
+																	Định nhóm máu ABO
+																</td>
+																<td class="text-center">
+																	01
+																</td>
+																<td class="text-center">
+																	Lần
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	0
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center">
+																	<input type="checkbox" class="mt-1"
+																		   value="">
+																</td>
+																<td>
+																	DV001
+																</td>
+																<td>
+																	Định nhóm máu ABO
+																</td>
+																<td class="text-center">
+																	01
+																</td>
+																<td class="text-center">
+																	Lần
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	0
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+															</tr>
+															<tr>
+																<td class="text-center">
+																	<input type="checkbox" class="mt-1"
+																		   value="">
+																</td>
+																<td>
+																	DV001
+																</td>
+																<td>
+																	Định nhóm máu ABO
+																</td>
+																<td class="text-center">
+																	01
+																</td>
+																<td class="text-center">
+																	Lần
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+																<td class="text-center">
+																	0
+																</td>
+																<td class="text-center">
+																	20,000
+																</td>
+															</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div class="border rounded-lg p-3 mt-3 bg-light hospital-form_wrap hospital-desc">
+													<div class="row row3">
+														<div class="col-lg-3">
+															<b>Tổng chi phí: 104,000 đồng</b>
+														</div>
+														<div class="col-lg-3">
+															<b>Đã trả: 54,000 đồng</b>
+														</div>
+														<div class="col-lg-3 d-none d-lg-block"></div>
+														<div class="col-lg-3">
+															<b class="text-danger">Còn nợ: 50,000 đồng</b>
+														</div>
+													</div>
+													<hr class="d-block d-lg-none">
+													<div class="row row3">
+														<div class="col-lg-3">
+															Tổng tiền tạm ứng: 0 đồng
+														</div>
+														<div class="col-lg-3">
+															BHYT chi trả: 0 đồng
+														</div>
+														<div class="col-lg-3">
+															BN chi trả: 104,000 đồng
+														</div>
+														<div class="col-lg-3">
+															Miễn giảm: 0 đồng
+														</div>
+													</div>
+												</div>
+												<div class="mt-3 border rounded-lg p-3 mt-3 bg-light hospital-form_wrap hospital-search">
+													<div class="hospital-search_header">
+														<div class="hospital-search_title">
+															Tìm kiếm dịch vụ tại đây
+														</div>
+														<div class="hospital-search_actions">
+															<a href="" class="hospital-search_actions--item">
+																<i class="fas fa-search"></i>
+															</a>
+														</div>
+													</div>
+													<div class="hospital-search_body">
+														<form action="">
+															<div class="row row3 mt-0">
+																<div class="col-lg-6">
+																	<div class="row row3">
+																		<div class="col-lg-6 col-sm-6">
+																			<div class="position-relative row row3 mt-0">
+																				<label for=""
+																					   class="col-form-label align-self-center col-4">
+																					Loại thu
+																				</label>
+																				<div class="col-8">
+																					<select name="" class="form-control"
+																							id="">
+																						<option value="">Loại thu 01
+																						</option>
+																						<option value="">Loại thu 02
+																						</option>
+																						<option value="">Loại thu 03
+																						</option>
+																						<option value="">Loại thu 04
+																						</option>
+																						<option value="">Loại thu 05
+																						</option>
+																						<option value="">Loại thu 06
+																						</option>
+																						<option value="">Loại thu 07
+																						</option>
+																						<option value="">Loại thu 08
+																						</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="position-relative row row3 mt-0">
+																				<label for=""
+																					   class="col-form-label align-self-center col-4">
+																					Hình thức
+																				</label>
+																				<div class="col-8">
+																					<select name="" class="form-control"
+																							id="">
+																						<option value="">Hình thức 01
+																						</option>
+																						<option value="">Hình thức 02
+																						</option>
+																						<option value="">Hình thức 03
+																						</option>
+																						<option value="">Hình thức 04
+																						</option>
+																						<option value="">Hình thức 05
+																						</option>
+																						<option value="">Hình thức 06
+																						</option>
+																						<option value="">Hình thức 07
+																						</option>
+																						<option value="">Hình thức 08
+																						</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-lg-6 col-sm-6">
+																			<div class="position-relative row row3 mt-0">
+																				<label for=""
+																					   class="col-form-label align-self-center col-4">
+																					Mã số
+																				</label>
+																				<div class="col-8">
+																					<input type="text"
+																						   class="form-control"
+																						   placeholder="Nhập mã số">
+																				</div>
+																			</div>
+																			<div class="position-relative row row3 mt-0">
+																				<label for=""
+																					   class="col-form-label align-self-center col-4">
+																					Số tiền thu
+																				</label>
+																				<div class="col-8">
+																					<input type="text"
+																						   class="form-control"
+																						   placeholder="Nhập số tiền thu">
+																				</div>
+																			</div>
+																			<div class="position-relative row row3 mt-0">
+																				<label for=""
+																					   class="col-form-label align-self-center col-4">
+																					Miễn giảm
+																				</label>
+																				<div class="col-8">
+																					<input type="text"
+																						   class="form-control"
+																						   placeholder="Nhập miễn giảm">
+																				</div>
+																			</div>
+																			<div class="position-relative row row3 mt-0">
+																				<label for=""
+																					   class="col-form-label align-self-center col-4">
+																					Thực thu
+																				</label>
+																				<div class="col-8">
+																					<input type="text"
+																						   class="form-control"
+																						   placeholder="Nhập thực thu">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="row row3">
+																		<div class="col-lg-6">
+																			<div class="hospital-search_text">
+																				Phòng khám: khám nội
+																			</div>
+																			<div class="hospital-search_text">
+																				Ngày thu tiền: 02/10/2022
+																			</div>
+																			<div class="hospital-search_text">
+																				Nội dung thu: Thu tiền xét nghiệm
+																			</div>
+																		</div>
+																		<div class="col-lg-6">
+																			<div class="hospital-search_text text-lg-right">
+																				<a href="">Danh sách phiếu thu</a>
+																			</div>
+																		</div>
+																		<div class="col-12 mt-4">
+																			<div class="d-flex align-items-center justify-content-lg-end justify-content-center">
+																				<div class="form-check-inline mb-0">
+																					<input type="checkbox"
+																						   class="form-check-input"
+																						   id="in-phieu-thu">
+																					<label class="form-check-label"
+																						   for="in-phieu-thu">
+																						In phiếu thu
+																					</label>
+																				</div>
+																				<div class="form-hospital_buttons">
+																					<button type="button"
+																							class="btn btn-success">
+																						<i class="far fa-save"></i>
+																						Lưu
+																					</button>
+																					<button type="button"
+																							class="btn btn-secondary">
+																						<i class="far fa-print"></i>
+																						In
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

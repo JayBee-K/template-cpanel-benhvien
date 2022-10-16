@@ -3339,7 +3339,6 @@ label:not([class*=col-form]) {
 .template-cpanel .hospital-sidebar .hospital-sidebar_header .hospital-sidebar_title {
     color: var(--white);
     font-size: 1.25rem;
-    font-weight: 700;
     line-height: 1.2;
 }
 
