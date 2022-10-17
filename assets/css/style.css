@@ -1586,7 +1586,7 @@ label:not([class*=col-form]) {
 
 	.template-cpanel .cpanel-header {
 		display: flex;
-		background-color: var(--template-color);
+		background-color: var(--primary-color);
 		position: relative;
 		z-index: 2;
 		padding: 0 15px 0 55px !important;
@@ -3493,7 +3493,7 @@ label:not([class*=col-form]) {
 }
 
 .template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse_wrap .navigation-title {
-	font-size: 1.15em;
+	font-size: 14px;
 	font-weight: 500;
 	color: var(--gray-700);
 	padding-bottom: 2px;
@@ -3741,6 +3741,10 @@ html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body 
 }
 
 html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body .hospital-sidebar_list .hospital-sidebar_list--item .hospital-list_item-left .text,
-html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body .hospital-sidebar_list .hospital-sidebar_list--item .hospital-list_item-right .time {
+html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body .hospital-sidebar_list .hospital-sidebar_list--item .hospital-list_item-right .time{
 	color: var(--gray-400);
+}
+
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .btn-link{
+	color: var(--gray-200);
 }
