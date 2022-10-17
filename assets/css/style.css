@@ -3627,7 +3627,6 @@ label:not([class*=col-form]) {
 	min-width: 150px;
 }
 
-
 html[data-theme=dark] body {
 	color: #fff;
 }
