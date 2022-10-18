@@ -957,10 +957,6 @@ label:not([class*=col-form]) {
 	padding-left: 10px;
 }
 
-.template-cpanel .hospital-table tr:nth-child(even) {
-	background-color: #fafafa;
-}
-
 .template-cpanel .hospital-table thead th {
 	white-space: nowrap;
 }
@@ -3555,7 +3551,7 @@ label:not([class*=col-form]) {
 
 .template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li:hover > a {
 	color: var(--primary-color);
-	background-color: rgba(0, 0,  0, .05);
+	background-color: rgba(0, 0, 0, .05);
 }
 
 .template-cpanel .cpanel-header .cpanel-header_navigation .navigation-collapse > ul > li.active > a {
@@ -3608,10 +3604,6 @@ label:not([class*=col-form]) {
 
 .template-cpanel .hospital-table td.card-table_pl, .template-cpanel .hospital-table th.card-table_pl {
 	padding-left: 10px;
-}
-
-.template-cpanel .hospital-table tr:nth-child(even) {
-	background-color: #fafafa;
 }
 
 .template-cpanel .hospital-table thead th {
@@ -3707,10 +3699,10 @@ html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body 
 }
 
 html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body .hospital-sidebar_list .hospital-sidebar_list--item .hospital-list_item-left .text,
-html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body .hospital-sidebar_list .hospital-sidebar_list--item .hospital-list_item-middle .time{
+html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body .hospital-sidebar_list .hospital-sidebar_list--item .hospital-list_item-middle .time {
 	color: var(--gray-400);
 }
 
-html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .btn-link{
+html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .btn-link {
 	color: var(--gray-200);
 }
