@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Cpanel</title>
+	<meta name="description" content="Template Cpanel">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Cpanel">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
+
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+	<link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.min.css">
+	<link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<style>
+		:root {
+			--template-color: #165c24;
+			--template-hover: #146e25;
+
+			--primary-color: #20a53a;
+			--primary-hover: #10952a;
+			--primary-rgb: 32, 165, 58;
+		}
+	</style>
+</head>
+
+<body>
+<div class="template-cpanel" id="template-cpanel">
+	<div class="cpanel-overlay" id="cpanel-overlay"></div>
+	<div class="cpanel-sidebar">
+		<div class="sidebar-header">
+			<a href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="sidebar-body">
+			<ul class="sidebar-body_menu" id="sidebar-menu">
+				<li>
+					<a href="./danh-sach.html">
+						<span class="icon"><i class="far fa-clipboard-list"></i></span>
+						<span class="text">Danh sách</span>
+					</a>
+				</li>
+				<li>
+					<a href="./don-tiep.html">
+						<span class="icon"><i class="fal fa-plus-square"></i></span>
+						<span class="text">Đón tiếp</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="./phong-kham.html">
+						<span class="icon"><i class="fal fa-stethoscope"></i></span>
+						<span class="text">Phòng khám</span>
+					</a>
+				</li>
+				<li>
+					<a href="./bac-si.html">
+						<span class="icon"><i class="fal fa-user-nurse"></i></span>
+						<span class="text">Bác sĩ</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cpanel-main">
+		<div class="cpanel-header">
+			<div class="cpanel-header_hamburger" id="call-sidebar">
+				<span></span>
+			</div>
+			<a class="cpanel-header_logo" href="/">
+				<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+			</a>
+			<div class="cpanel-header_navigation">
+				<ul class="list-unstyled mb-0">
+					<li class="navigation-logo">
+						<a href="">
+							<img src="./assets/images/logo.svg" height="16" width="90" class="img-fluid" alt="">
+						</a>
+					</li>
+					<li class="position-relative navigation-collapse_wrap">
+						<div class="navigation-title">
+							<span>
+								<i class="fas fa-user-md"></i>
+							</span>
+							Đón tiếp
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<div class="navigation-collapse">
+							<ul class="collapse-menu_list">
+								<li>
+									<a href="./danh-sach.html">
+										<span class="icon"><i class="far fa-clipboard-list"></i></span>
+										<span class="text">Danh sách</span>
+									</a>
+								</li>
+								<li>
+									<a href="./don-tiep.html">
+										<span class="icon"><i class="fal fa-plus-square"></i></span>
+										<span class="text">Đón tiếp</span>
+									</a>
+								</li>
+								<li class="active">
+									<a href="./phong-kham.html">
+										<span class="icon"><i class="fal fa-stethoscope"></i></span>
+										<span class="text">Phòng khám</span>
+									</a>
+								</li>
+								<li>
+									<a href="./bac-si.html">
+										<span class="icon"><i class="fal fa-user-nurse"></i></span>
+										<span class="text">Bác sĩ</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="./danh-sach.html"><span>Danh sách bệnh nhân</span></a>
+					</li>
+					<li>
+						<a href="./don-tiep.html"><span>Đón tiếp</span></a>
+					</li>
+					<li>
+						<a href="./phong-kham.html" class="active"><span>Phòng khám</span></a>
+					</li>
+					<li>
+						<a href="./bac-si.html"><span>Bác sĩ</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="cpanel-header_theme">
+				<a href="javascript:void(0)" id="changeTheme">
+					<svg id="light" xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40"
+						 data-icon="sun" viewBox="0 0 8 8" style="display: none;">
+						<path d="M4 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-2.5 1c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm5 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-2.5 1c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-3.5 1.5c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm7 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-6 2.5c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm5 0c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm-2.5 1c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5z"></path>
+					</svg>
+					<svg id="dark" xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40"
+						 data-icon="moon" viewBox="0 0 8 8" style="display: inline;">
+						<path d="M2.719 0c-1.58.53-2.719 2.021-2.719 3.781 0 2.21 1.79 4 4 4 1.76 0 3.251-1.17 3.781-2.75-.4.14-.831.25-1.281.25-2.21 0-4-1.79-4-4 0-.44.079-.881.219-1.281z"></path>
+					</svg>
+				</a>
+			</div>
+			<div class="cpanel-header_user d-flex align-items-center">
+				<a href="" class="header-user_button">
+					<span>
+						<i class="fas fa-user"></i>
+					</span>
+					Admin
+				</a>
+				<a href="" class="btn-link align-items-center d-flex ml-4">
+					<i class="fal fa-sign-out"></i>
+					<span class="d-none d-lg-block ml-2">
+						Đăng xuất
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="cpanel-body">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="cpanel-wrap w-100">
+						<div class="hospital-wrap w-100">
+							<div class="form-hospital">
+								<div class="form-hospital_body">
+									<div class="col-12">
+										<div class="row">
+											<div class="col-12">
+												<div class="cpanel-heading">
+													<div class="cpanel-heading_wrap">
+														<div class="heading-title">
+															Danh sách user
+														</div>
+														<div class="heading-button">
+															<a href="./them-user.html"
+															   class="btn btn-light btn-link font-weight-bold">Add
+																new</a>
+														</div>
+													</div>
+													<div class="cpanel-heading_links">
+														<a href="">
+															<i class="fas fa-home-alt"></i>
+															Tất cả
+														</a>
+														<a href="">
+															<i class="fas fa-user-alt"></i>
+															Quản trị viên
+														</a>
+														<a href="">
+															<i class="fas fa-plus"></i>
+															Thêm mới
+														</a>
+														<a href="">
+															<i class="fas fa-home-alt"></i>
+															Tất cả
+														</a>
+														<a href="">
+															<i class="fas fa-user-alt"></i>
+															Quản trị viên
+														</a>
+														<a href="">
+															<i class="fas fa-plus"></i>
+															Thêm mới
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cpanel-wrap">
+											<div class="mb-2">
+												<div class="form-m1 form-m1_filter">
+													<form action="">
+														<div class="row row5 rowmb3">
+															<div class="col-lg col-md-3 col-6">
+																<input class="form-control" value="" name=""
+																	   placeholder="Tên đăng nhập">
+															</div>
+															<div class="col-lg col-md-3 col-6">
+																<input class="form-control" value="" name=""
+																	   placeholder="Họ & tên">
+															</div>
+															<div class="col-lg col-md-3 col-6">
+																<input class="form-control" value="" name=""
+																	   placeholder="Email">
+															</div>
+															<div class="col-lg col-md-3 col-6">
+																<input class="form-control" value="" name=""
+																	   placeholder="Số điện thoại">
+															</div>
+															<div class="col-lg col-md-3 col-6">
+																<select name="" class="form-control">
+																	<option value="" selected="selected">Nhóm</option>
+																	<option value="">Guest</option>
+																	<option value="">Đại lí</option>
+																	<option value="">Thành viên</option>
+																</select>
+															</div>
+															<div class="col-lg col-md-3 col-6">
+																<select name="" class="form-control">
+																	<option value="" selected="selected">Vai trò
+																	</option>
+																	<option value="">Backend</option>
+																	<option value="">Super Admin</option>
+																	<option value="">User</option>
+																	<option value="">Seller</option>
+																</select>
+															</div>
+															<div class="col-lg col-md-3 col-6">
+																<select name="" class="form-control">
+																	<option value="" selected="selected">Giới tính
+																	</option>
+																	<option value="">Nam</option>
+																	<option value="">Nữ</option>
+																</select>
+															</div>
+															<div class="col-12 col-md flex-lg-grow-0 d-flex align-items-center px-0">
+																<button class="btn btn-primary btn-small m-1 my-md-0"
+																		type="submit">
+																	<span class="fal fa-search"></span>
+																	Tìm kiếm
+																</button>
+																<button class="btn btn-success btn-small m-1 my-md-0"
+																		type="submit">
+																	<i class="fas fa-file-excel"></i>
+																</button>
+																<a class="btn btn-danger btn-small m-1 my-md-0">
+																	<i class="fa fa-trash"></i>
+																	Bỏ lọc
+																</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-bordered table-striped table-hover table-module mb-0">
+													<thead>
+													<tr>
+														<th class="text-center">
+															<input type="checkbox" class="mt-1 check-all" value="">
+														</th>
+														<th>Tên đăng nhập</th>
+														<th>Họ & tên</th>
+														<th>Email</th>
+														<th>Số điện thoại</th>
+														<th>Nhóm</th>
+														<th>Vai trò</th>
+														<th>Giới tính</th>
+														<th class="text-center">Thao tác</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">
+															<input type="checkbox" class="mt-1 check-only" value="">
+														</td>
+														<td>nguyenvana</td>
+														<td>Nguyễn Văn A</td>
+														<td>nguyenvana@gmail.com</td>
+														<td>0909090909</td>
+														<td>Backend</td>
+														<td>Super Admin</td>
+														<td>Nam</td>
+														<td class="text-center">
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-info">
+																<i class="fas fa-edit"></i> Chỉnh sửa
+															</button>
+															<button type="button"
+																	class="my-1 my-lg-0 btn btn-sm_table btn-danger">
+																<i class="fas fa-trash-alt"></i>
+																Xoá
+															</button>
+														</td>
+													</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="row align-items-center justify-content-between mt-3">
+												<div class="col-sm-6 mb-2 mt-sm-0">
+													<div class="form-m1">
+														<div class="form">
+															<div class="row row5 rowmb3 justify-content-center justify-content-sm-start">
+																<div class="col-5 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+																	<select name="" class="form-control">
+																		<option value="" selected="selected">Hành động
+																		</option>
+																		<option value="">Xoá đã chọn</option>
+																	</select>
+																</div>
+																<div class="col-4 col">
+																	<button class="btn btn-primary btn-small ml-2"
+																			type="submit">
+																		<i class="fas fa-check-circle mr-1"></i>Thực
+																		hiện
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="section-pagination justify-content-center justify-content-sm-end">
+														<ul class="pagination">
+															<li class="page-item">
+																<a class="page-link" href="#">
+																	<i class="fas fa-angle-left"></i>
+																</a>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">1</a>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">2</a>
+															</li>
+															<li class="page-item active">
+																<a class="page-link" href="#">3</a>
+															</li>
+															<li class="page-item">
+																<a class="page-link" href="#">
+																	<i class="fas fa-angle-right"></i>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cpanel-footer">
+		<div class="cpanel-wrap">
+			<div class="text-center">
+				Template Cpanel v1 - Design by Nencer <span class="px-2">-</span>
+				<a href="./">Tài liệu</a>
+				<span class="px-2">-</span>
+				<a href="tel:0333851915">Liên hệ</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+<script type="text/javascript" src="./assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
