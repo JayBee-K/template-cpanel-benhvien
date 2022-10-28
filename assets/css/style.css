@@ -3776,3 +3776,17 @@ html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .btn-l
 .quick-search > ul > li + li {
 	border-top: 1px solid var(--gray-100);
 }
+
+html[data-theme=dark] .quick-search {
+	background-color: var(--gray-800) !important;
+	border-color: var(--gray-600) !important;
+}
+
+html[data-theme=dark] .quick-search > ul > li > a {
+	color: var(--white);
+}
+
+html[data-theme=dark] .quick-search > ul > li > a:hover {
+	color: var(--white);
+	background-color: var(--gray-700);
+}
