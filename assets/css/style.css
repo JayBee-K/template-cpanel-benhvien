@@ -3706,3 +3706,73 @@ html[data-theme=dark] .template-cpanel .hospital-sidebar .hospital-sidebar_body 
 html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .btn-link {
 	color: var(--gray-200);
 }
+
+.quick-search {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	border: 1px solid var(--gray-200);
+	border-top: 0;
+	box-shadow: var(--shadow-primary);
+	border-radius: 0 0 4px 4px;
+	background-color: var(--white);
+	min-width: 200px;
+	width: max-content;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: var(--transition-default);
+}
+
+.is-quickSearch .quick-search {
+	opacity: 1;
+	visibility: visible;;
+	pointer-events: auto;
+}
+
+.quick-search > ul {
+	max-height: 450px;
+	overflow-y: auto;
+}
+
+.quick-search > ul::-webkit-scrollbar {
+	width: 4px;
+}
+
+.quick-search > ul::-webkit-scrollbar-track {
+	border-left: .5px solid #dedede;
+	border-top: .5px solid #dedede;
+	border-bottom: .5px solid #dedede
+}
+
+.quick-search > ul::-webkit-scrollbar-thumb {
+	background: #dedede;
+	border-radius: 4px;
+}
+
+.quick-search > ul::-webkit-scrollbar-thumb:hover {
+	background: #bfbfbf
+}
+
+.quick-search > ul > li > a {
+	display: block;
+	width: 100%;
+	padding: 6px 10px;
+	cursor: pointer;
+	color: var(--gray-800);
+	font-size: 14px;
+}
+
+.quick-search > ul > li:hover > a {
+	background-color: var(--gray-100);
+}
+
+.quick-search > ul > li.active > a {
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.quick-search > ul > li + li {
+	border-top: 1px solid var(--gray-100);
+}

@@ -279,6 +279,20 @@
 		});
 	}
 
+	let handleQuickSearch = function () {
+		if ($('.handle-quickSearch').length && $('.handle-quickSearch_input').length) {
+			$('.handle-quickSearch_input').keyup(function () {
+				$(this).parent('.handle-quickSearch').addClass('is-quickSearch');
+			});
+
+			$(document).mouseup(function (e) {
+				if (!$('.handle-quickSearch.is-quickSearch').is(e.target) && $('.handle-quickSearch.is-quickSearch').has(e.target).length === 0) {
+					$('.handle-quickSearch.is-quickSearch').removeClass('is-quickSearch');
+				}
+			});
+		}
+	}
+
 	$(function () {
 		initSidebar();
 		initSelect2();
@@ -286,6 +300,7 @@
 		initDanhSachSideBar();
 		switchTheme();
 		initFromModule1();
+		handleQuickSearch();
 
 		$(document).on('click', '.copy-value', function () {
 			if ($(this).attr('data-value') != undefined) {
