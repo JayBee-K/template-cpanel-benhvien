@@ -3717,7 +3717,7 @@ html[data-theme=dark] .template-cpanel .cpanel-header .cpanel-header_user .btn-l
 	border-radius: 0 0 4px 4px;
 	background-color: var(--white);
 	min-width: 200px;
-	width: max-content;
+	width: 100%;
 	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
@@ -3793,4 +3793,8 @@ html[data-theme=dark] .quick-search > ul > li > a:hover {
 
 table .quick-search > ul {
 	max-height: 275px;
+}
+
+.table-noscrollY {
+	overflow-y: hidden;
 }

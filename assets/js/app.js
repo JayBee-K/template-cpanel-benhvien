@@ -283,11 +283,15 @@
 		if ($('.handle-quickSearch').length && $('.handle-quickSearch_input').length) {
 			$('.handle-quickSearch_input').keyup(function () {
 				$(this).parent('.handle-quickSearch').addClass('is-quickSearch');
+				if ($(this).parent('.handle-quickSearch').parents('.table-responsive').length) {
+					$(this).parent('.handle-quickSearch').parents('.table-responsive').css('overflow', 'inherit');
+				}
 			});
 
 			$(document).mouseup(function (e) {
 				if (!$('.handle-quickSearch.is-quickSearch').is(e.target) && $('.handle-quickSearch.is-quickSearch').has(e.target).length === 0) {
 					$('.handle-quickSearch.is-quickSearch').removeClass('is-quickSearch');
+					$('.handle-quickSearch').parents('.table-responsive').css({'overflow-x': 'auto', 'overflow-y': 'hidden'});
 				}
 			});
 		}
