@@ -3790,3 +3790,7 @@ html[data-theme=dark] .quick-search > ul > li > a:hover {
 	color: var(--white);
 	background-color: var(--gray-700);
 }
+
+table .quick-search > ul {
+	max-height: 275px;
+}
