@@ -291,9 +291,21 @@
 			$(document).mouseup(function (e) {
 				if (!$('.handle-quickSearch.is-quickSearch').is(e.target) && $('.handle-quickSearch.is-quickSearch').has(e.target).length === 0) {
 					$('.handle-quickSearch.is-quickSearch').removeClass('is-quickSearch');
-					$('.handle-quickSearch').parents('.table-responsive').css({'overflow-x': 'auto', 'overflow-y': 'hidden'});
+					$('.handle-quickSearch').parents('.table-responsive').css({
+						'overflow-x': 'auto',
+						'overflow-y': 'hidden'
+					});
 				}
 			});
+		}
+	}
+
+	let handleTriggerCheckBox = function () {
+		if ($('.trigger-label').length) {
+			$('.trigger-label').click(function () {
+				let checked = $('#' + $(this).attr('data-id')).is(":checked");
+				$('#' + $(this).attr('data-id')).attr("checked", !checked);
+			})
 		}
 	}
 
@@ -313,5 +325,7 @@
 				initClipboardCopy($(this).parent().find('input').val());
 			}
 		});
+
+		handleTriggerCheckBox();
 	});
 })(jQuery);
