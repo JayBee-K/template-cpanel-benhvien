@@ -302,9 +302,14 @@
 
 	let handleTriggerCheckBox = function () {
 		if ($('.trigger-label').length) {
-			$('.trigger-label').click(function () {
-				let checked = $('#' + $(this).attr('data-id')).is(":checked");
-				$('#' + $(this).attr('data-id')).attr("checked", !checked);
+			$('.trigger-label').click(function (event) {
+				if (event.target.tagName !== 'INPUT') {
+					if ($('#' + $(this).attr('data-id')).is(":checked") == false) {
+						$('#' + $(this).attr('data-id')).prop("checked", true);
+					} else {
+						$('#' + $(this).attr('data-id')).prop("checked", false);
+					}
+				}
 			})
 		}
 	}
