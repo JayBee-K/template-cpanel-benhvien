@@ -2,40 +2,6 @@
 	'use strict';
 	let windowWidth = $(window).width();
 
-	let switchTheme = function () {
-		let buttonChangeTheme = $('#changeTheme'),
-			currentTheme = localStorage.getItem('theme');
-
-		if (currentTheme) {
-			$('html').attr('data-theme', currentTheme);
-			if (currentTheme === 'light') {
-				buttonChangeTheme.find('#light').hide();
-				buttonChangeTheme.find('#dark').show();
-			} else {
-				buttonChangeTheme.find('#light').show();
-				buttonChangeTheme.find('#dark').hide();
-			}
-		}
-
-		function setLocalStorageTheme(e) {
-			if ($('html').attr('data-theme') === 'light') {
-				$('html').attr('data-theme', 'dark');
-				localStorage.setItem('theme', 'dark');
-				buttonChangeTheme.find('#light').show();
-				buttonChangeTheme.find('#dark').hide();
-			} else {
-				$('html').attr('data-theme', 'light');
-				localStorage.setItem('theme', 'light');
-				buttonChangeTheme.find('#light').hide();
-				buttonChangeTheme.find('#dark').show();
-			}
-		}
-
-		buttonChangeTheme.click(function () {
-			setLocalStorageTheme();
-		});
-	}
-
 	let initSidebar = function () {
 		let btnCall = $('#call-sidebar'),
 			overlay = $('#cpanel-overlay'),
@@ -319,7 +285,6 @@
 		initSelect2();
 		initTree();
 		initDanhSachSideBar();
-		switchTheme();
 		initFromModule1();
 		handleQuickSearch();
 
